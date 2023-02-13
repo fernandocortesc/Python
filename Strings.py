@@ -11,10 +11,10 @@ string = "This is a string inside a variable"
 
 # Indexes are enclosed by square brackets ([]). In order to access an element, we need to specify the string and the index number:
 string[0] # This will print out "T"
-string[-1] #This will print out "e"
+string[-1] # This will print out "e"
 
 # Python has one function that allows us to know the lenght of a string: len()
-len(string) #This will print out "34"
+len(string) # This will print out "34"
 
 # If we specify a wrong index, we will receive an error: IndexError: string index out of range. This means the string does not have that amount of characters
 
@@ -25,6 +25,10 @@ a + b = "Hello world"
 
 # Strings can be used with math operator
 a * 3 = 'Hello Hello Hello '
+
+# We can also verify is a character is in a string by using the "in" and "not in" operators
+"T" in string # This will return a boolean. In this case, it's "True"
+"z" not in string # Will return "True"
 
 # String methods
 
@@ -42,4 +46,3 @@ string.strip()  # .strip() Eliminates all white spaces at the beggining and at t
 string.replace('i', 'ii') #.replace() Replaces the first specified character for the second one
 string.split() # .split Split the string into substrings. You can specify delimiters for splitting the string. It returns a list
 "_".join(string) # It adds a "_" between each element in the string
-
